@@ -1,9 +1,8 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 
 public class automation {
 
@@ -56,7 +55,7 @@ public class automation {
         JavascriptExecutor jse = (JavascriptExecutor)robot;
         WebElement element = robot.findElement(txtemail_Create);
         jse.executeScript("arguments[0].scrollIntoView()", element);
-        robot.findElement(txtemail_Create).sendKeys("amph7519@gmail.com");
+        robot.findElement(txtemail_Create).sendKeys("amph79@gmail.com");
         robot.findElement(btnSubmitcreate).click();
         Thread.sleep(3000);
         robot.findElement(rdoButtom).click();
@@ -80,12 +79,10 @@ public class automation {
         robot.findElement(txtPhone_mobile).sendKeys("304326092");
         robot.findElement(txtAlias).sendKeys("amphard");
         robot.findElement(btnsubmitAccount).click();
-        Thread.sleep(3000);
-        robot.findElement(llbWomen).click();
+        /* robot.findElement(llbWomen).click(); */
 
 
 
 
     }
 }
-
